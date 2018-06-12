@@ -1,5 +1,4 @@
 // Assignment9.cpp : Defines the entry point for the console application.
-//
 
 #include "iostream"
 #include "string"
@@ -7,7 +6,7 @@
 
 using namespace std;
 
-//declaring my functions
+///declaring my functions
 string& referncer(vector<string>& stuff, int num);
 void badswap(int x, int y);
 void goodswap(int& x, int& y);
@@ -55,13 +54,13 @@ int main()
 	return 0;
 }
 
-//function that returns a refrence to the value of num in the vector
+///function that returns a refrence to the value of num in the vector
 string& referncer(vector<string>& stuff, int num)
 {
 	return stuff[num];
 }
 
-//ffunction that takes copys of the arguments
+///function that takes copys of the arguments
 void badswap(int x, int y) 
 {
 	int temp;
@@ -70,7 +69,7 @@ void badswap(int x, int y)
 	y = temp;
 
 }
-//function that takes refrences of the arguments
+///function that takes refrences of the arguments
 void goodswap(int& x, int& y) 
 {
 	int temp;
