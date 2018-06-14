@@ -9,6 +9,7 @@ using namespace std;
 ///declaring my functions
 string& referncer(vector<string>& stuff, int num);
 void badswap(int x, int y);
+//uses reffrences instead of the copy
 void goodswap(int& x, int& y);
 
 //declaring a vector with strings named stuff
@@ -47,8 +48,17 @@ int main()
 
 	//the function returns a refrence and is put in the refrence rStr then it gets changed
 	string& rStr = referncer(stuff, 0);
-	rStr = "not stuff";
+	//rStr = "not stuff";
+
 	cout << rStr << endl;
+
+	//pointer practice
+
+	int stuff1 = 5;
+	int* mypointer = &stuff1;
+	*mypointer = 6;
+	cout << *mypointer;
+
 
 	system("pause");
 	return 0;
